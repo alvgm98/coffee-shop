@@ -1,0 +1,93 @@
+.coffee-card {
+  width: 300px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-card img {
+  border-radius: 12px;
+  width: 100%;
+}
+
+.coffee-name-price {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-name-price .coffee-name {
+  margin: 15px 0 0 0;
+  font-weight: 500;
+}
+
+.coffee-name-price .coffee-price {
+  background-color: #bee3cc;
+  border-radius: 6px;
+
+  height: 25px;
+  width: 50px;
+
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-card .popular {
+  margin: 0;
+  border-radius: 20px;
+  width: 70px;
+  height: 20px;
+  background-color: #F6C768;
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #000;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-rating-available {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee-rating-available .coffee-rating-available-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.coffee-rating-available .coffee-rating-available-div img {
+  width: 28px;
+}
+
+.coffee-rating-available .coffee-rating-available-div h2 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.coffee-rating-available .coffee-rating-available-div .votes {
+  color: #6f757c;
+}
+
+.coffee-rating-available .coffee-rating-available-div .warning-text {
+  color: #ed735d;
+}

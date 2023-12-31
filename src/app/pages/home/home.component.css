@@ -1,0 +1,13 @@
+
+main {
+  min-height: 100vh;
+
+  background-image: url('../../../assets/img/bg-cafe.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: top;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

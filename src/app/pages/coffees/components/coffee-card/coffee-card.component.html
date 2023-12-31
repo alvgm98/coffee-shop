@@ -1,0 +1,38 @@
+<article class="coffee-card">
+  <img src="{{ coffee.image }}" alt="{{ coffee.name }}" />
+  <div class="coffee-name-price">
+    <h1 class="coffee-name">{{ coffee.name }}</h1>
+    <h3 class="coffee-price">{{ coffee.price }}</h3>
+  </div>
+  @if (coffee.popular) {
+    <h4 class="popular">Popular</h4>
+  }
+
+  <div class="coffee-rating-available">
+
+    @if (coffee.rating != null) {
+    <div class="coffee-rating-available-div">
+      <img src="../../../../../assets/img/Star_fill.svg" />
+      <h2>
+        {{ coffee.rating }}
+        <span class="votes">({{ coffee.votes }} votes)</span>
+      </h2>
+    </div>
+
+      @if (!coffee.available) {
+      <div class="coffee-rating-available-div">
+        <h2 class="warning-text">Sold out</h2>
+      </div>
+      }
+
+    } @else {
+      <div class="coffee-rating-available-div">
+        <img src="../../../../../assets/img/Star.svg" />
+        <h2>
+          <span class="votes">No ratings</span>
+        </h2>
+      </div>
+    }
+
+  </div>
+</article>

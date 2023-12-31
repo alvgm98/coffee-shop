@@ -1,0 +1,30 @@
+<section id="main">
+  <h1>Our Collection</h1>
+  <p>
+    Introducing our Coffee Collection, a selection of unique coffees from
+    different roast types and origins, expertly roasted in small batches and
+    shipped fresh weekly.
+  </p>
+  <div class="buttons">
+    <button
+      (click)="selectAllProducts()"
+      [ngClass]="availableSelected ? 'button' : 'button button-active'"
+    >
+      All Products
+    </button>
+    <button
+      (click)="selectAvaibleProducts()"
+      [ngClass]="!availableSelected ? 'button' : 'button button-active'"
+    >
+      Available Now
+    </button>
+  </div>
+
+  <section id="coffees">
+    @for (coffee of coffees; track coffee.id) {
+      @if (availableSelected && coffee.available || !availableSelected) {
+        <app-coffee-card [coffee]="coffee" />
+      }
+    }
+  </section>
+</section>
